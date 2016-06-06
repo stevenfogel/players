@@ -1,0 +1,5 @@
+h1 players
+
+div(ng-repeat="p in vm.players")
+ a(ui-sref="players details({ id: p.id })") {{ p.firstName }} {{ p.lastName }}
+ button(ng-click="vm.remove(p)") delete

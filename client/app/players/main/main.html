@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/client/app/players/main/main.css">
+
+<h1>Players Main</h1>
+
+<br>
+<div ng-repeat="p in vm.players">
+  <h2><a ui-sref="players details({ id: p.id })">{{ p.firstName }}</a></h2>
+</div>
